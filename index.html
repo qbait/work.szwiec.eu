@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Jakub Szwiec &middot; Android Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="samples android apps by Jakub Szwiec">
+<meta name="author" content="Jakub Szwiec">
+
+<!-- Le styles -->
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<style type="text/css">
+body {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+/* Custom container */
+.container-narrow {
+	margin: 0 auto;
+	max-width: 700px;
+}
+.container-narrow > hr {
+	margin: 30px 0;
+}
+.jumbotron {
+	position: relative;
+	padding: 20px 0;
+	color: #fff;
+}
+.jumbotron h1 {
+	font-size: 72px;
+	line-height: 1;
+}
+.jumbotron .btn {
+	font-size: 21px;
+	padding: 14px 24px;
+}
+
+.cracow_cycling_guide {
+background-color: #5f0e0e;
+background-image: -moz-linear-gradient(top, #330808, #731111);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#330808), to(#731111));
+background-image: -webkit-linear-gradient(top, #330808, #731111);
+background-image: -o-linear-gradient(top, #330808, #731111);
+background-image: linear-gradient(to bottom, #330808, #731111);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff330808', endColorstr='#ff731111', GradientType=0);
+}
+
+
+.yaap {
+background-color: #165daa;
+background-image: -moz-linear-gradient(top, #1967bc, #0f3f73);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1967bc), to(#0f3f73));
+background-image: -webkit-linear-gradient(top, #1967bc, #0f3f73);
+background-image: -o-linear-gradient(top, #1967bc, #0f3f73);
+background-image: linear-gradient(to bottom, #1967bc, #0f3f73);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1967bc', endColorstr='#ff0f3f73', GradientType=0);
+
+margin-top:80px;
+margin-bottom:30px;
+}
+
+.iamcoming {
+background-color: #0d5747;
+background-image: -moz-linear-gradient(top, #08332a, #0f6653);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#08332a), to(#0f6653));
+background-image: -webkit-linear-gradient(top, #08332a, #0f6653);
+background-image: -o-linear-gradient(top, #08332a, #0f6653);
+background-image: linear-gradient(to bottom, #08332a, #0f6653);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff08332a', endColorstr='#ff0f6653', GradientType=0);
+
+margin-top:80px;
+margin-bottom:30px;
+}
+
+
+
+#ccg_h1 {
+line-height: 0.6;
+font-size: 60px;
+}
+
+#ccg_h2 {
+font-size: 46px;
+}
+
+#ccg_logo {
+padding-right: 16px;
+}
+
+
+.other {
+	background: rgb(92,61,98); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(92,61,98,1) 1%, rgba(53,48,78,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(92,61,98,1)), color-stop(100%, rgba(53,48,78,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(92,61,98,1) 1%, rgba(53,48,78,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(92,61,98,1) 1%, rgba(53,48,78,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(92,61,98,1) 1%, rgba(53,48,78,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(92,61,98,1) 1%, rgba(53,48,78,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c3d62', endColorstr='#35304e', GradientType=0 ); /* IE6-9 */
+	padding-bottom:40px;
+	margin-top:80px;
+	margin-bottom:30px;
+}
+a {
+	color: #aaa;
+	font-size:16px;
+}
+a:hover {
+	color: #aaa;
+	font-size:16px;
+}
+.other h1 {
+	text-align: center;
+}
+.other .app-title {
+	margin-top: -30px;
+}
+/* Supporting marketing content */
+        .marketing {
+	margin: 60px 0;
+}
+.marketing p + h4 {
+	margin-top: 28px;
+}
+.masthead a {
+	color: #000;
+	text-decoration: none;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+.masthead a:hover {
+	color: #555;
+}
+.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+	color: #ffffff;
+	background-color: #000;
+}
+.masthead {
+	color:#000;
+}
+.masthead h1 {
+	font-size: 72px;
+	line-height: 0.75;
+	font-weight: normal;
+	padding-top:36px;
+}
+.masthead .nav {
+	padding-right:32px;
+	margin-bottom:30px;
+}
+.masthead h2 {
+	font-size: 21px;
+	line-height: 0.75;
+}
+.iamcoming-devices {
+	z-index: 1;
+	margin-bottom: -70px;
+}
+.iamcoming-devices img {
+	max-width:100%;
+}
+.iamcoming_ico {
+	margin-top: -30px;
+	margin-right:16px;
+}
+.yaap_ico {
+	margin-top: -20px;
+	margin-right:16px;
+}
+.app-title {
+	margin-top: 30px;
+	margin-bottom: 24px;
+}
+
+
+
+        /* Responsive
+        -------------------------------------------------- */
+
+        /* Desktop large
+        ------------------------- */
+        @media (min-width: 1200px) {
+body {
+	background-color: #FFF;
+}
+}
+		
+        /* Desktop
+        ------------------------- */
+        @media (min-width: 980px) and (max-width: 1199px) {
+body {
+	background-color: #FFF;
+}
+.jumbotron h1 {
+	font-size:46px;
+}
+}
+
+        /* Desktop
+        ------------------------- */
+        @media (max-width: 980px) {
+body {
+	background-color: #FFF;
+}
+}
+
+        /* Tablet to desktop
+        ------------------------- */
+        @media (min-width: 768px) and (max-width: 979px) {
+body {
+	background-color: #FFF;
+}
+.jumbotron h1 {
+	font-size:36px;
+}
+}
+
+        /* Tablet
+        ------------------------- */
+        @media (max-width: 767px) {
+/* Widen masthead and social buttons to fill body padding */
+        .jumbotron {
+	margin-right: -20px;
+	margin-left:  -20px;
+}
+.masthead {
+	margin-right: -36px;
+	margin-left:  -36px;
+}
+.container {
+	margin-right: 20px;
+	margin-left:  20px;
+}
+body {
+	background-color: #FFF;
+}
+.masthead .nav {
+	padding-top:32px;
+	padding-right: 0px;
+}
+.masthead h1 {
+	font-size: 38px;
+	line-height: 0.75;
+	font-weight: normal;
+	padding-top:12px;
+}
+.masthead h2 {
+	font-size: 21px;
+	line-height: 0.75;
+}
+.jumbotron h1 {
+	font-size:52px;
+}
+}
+
+        /* Landscape phones
+        ------------------------- */
+        @media (max-width: 480px) {
+body {
+	background-color: #FFF;
+}
+.masthead h1 {
+	font-size: 24px;
+	line-height: 0.8;
+	font-weight: normal;
+	padding-top:12px;
+}
+.masthead h2 {
+	font-size: 16px;
+	line-height: 0.9;
+}
+.masthead .nav {
+	padding-top:12px;
+	padding-right: 0px;
+}
+a {
+	font-size: 10px;
+}
+a:hover {
+	font-size: 10px;
+}
+.nav-pills > li > a {
+	padding-top:16px;
+	padding-bottom:16px;
+	padding-right:3px;
+	padding-left:3px;
+}
+</style>
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+<!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="assets/ico/favicon.png">
+</head>
+
+<body>
+<div class="masthead">
+  <div class="container"> 
+    <h1>JAKUB <b>SZWIEC</b></h1>
+    <h2>ANDROID DEVELOPER</h2>
+    <ul class="nav nav-pills pull-right">
+      <li class="active"><a href="#">Work</a></li>
+      <li><a href="http://about.me/jakub.szwiec" target="_blank">About</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="jumbotron cracow_cycling_guide">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span6">
+        <div class="app-title">
+          <div class="cracow_cycling_guide_ico pull-left"><img id="ccg_logo" src="assets/img/cracow_cycling_guide_ico.png" alt="app icon"></div>
+          <h1 id="ccg_h1">Cracow</h1>
+		  <h2 id="ccg_h2">bike maps</h2>
+        </div>
+        <p>One day I wanted to find an interesting cycling routes in my mobile phone. I didn't find that kind of app for my city - Cracow, so I created one on my own. Application contains of the best cycling routes and attractions on the road. Of course it is also integrated with GPS.</p>
+        <p>My app works on Android 2.2 and higher. You can download it from <a href="https://play.google.com/store/apps/details?id=eu.szwiec.cyclingguide.cracow&hl=pl">Google Play</a>.</p>
+      </div>
+      <div class="span6">
+        <div class="iamcoming-devices"><img src="assets/img/cracow_cycling_guide_screen.png" alt="app screens"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron yaap">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span6">
+        <div class="app-title">
+          <div class="yaap_ico pull-left"><img src="assets/img/yaap_ico.png" alt="app icon"></div>
+          <h1>YaaP</h1>
+        </div>
+        <p>App archives sms messages and call logs to cloud. You can sign in to account, mark "auto backup" option and forget about application or backup manually if You want to enjoy a nice user interface.</p>
+        <p>My app works on Android 2.1 and higher and it is only piece of the ecosystem. Development of server-side and desktop end-point is in progress, but it isn't my part of work.</p>
+      </div>
+      <div class="span6">
+        <div class="iamcoming-devices"><img src="assets/img/yaap_screen.png" alt="app screens"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron iamcoming">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span6">
+        <div class="app-title">
+          <div class="iamcoming_ico pull-left"><img src="assets/img/iamcoming_ico.png" alt="app icon"> </div>
+          <h1>I am coming</h1>
+        </div>
+        <p>I have an amazing girlfriend. She loves to prepare delicious food for me when I come home from work. I was forgetting about sending a message to her that I am coming. This problem inspired me to create "I am coming" app. Now, my app works in the background and I don't have to worry. Application informs her about my current distance from home and the exact address.</p>
+		<p>App works on Android 2.1 and higher. If You want to test it now, do not hesitate to <a href="http://about.me/jakub.szwiec">contact me</a>. The app will also be available at Google Play soon.</p>
+      </div>
+      <div class="span6">
+        <div class="iamcoming-devices"><img src="assets/img/iamcoming_screen.png" alt="app screens"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron other">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="app-title">
+          <h1>...</h1>
+        </div>
+        <p>Above apps are my after hours projects. Most of the day I am focused on complex SFA application called <a href="https://www.farmaprom.pl/produkty/produkt,1,aplikacja-mobilna-izi-farmaprom.html">IZI</a>, used by the biggest pharmaceutical companies in Poland. I develop and maintain this application for <a href="https://www.farmaprom.pl/">FarmaProm</a> Company.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <hr>
+  <div class="footer">
+    <p>&copy; Jakub Szwiec. All Right Reserved.</p>
+  </div>
+</div>
+<!-- /container --> 
+
+<script type="text/javascript">
+////-->BEGIN GOOGLE ANALYTICS
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39277450-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  
+////-->END GOOGLE ANALYTICS
+</script>
+
+</body>
+</html>
+
+<!-- Hosting24 Analytics Code -->
+<script type="text/javascript" src="http://stats.hosting24.com/count.php"></script>
+<!-- End Of Analytics Code -->
